@@ -23,7 +23,7 @@ Vytvořený na začátku hry míchacím algoritmem pro akční karty (algoritmus
 
 ##### Poznámka ke struktuře
 
-- Takto nemusíme řešit jakékoli doplňovaní a otáčení karet, jelikož po koupi se karta ze seznamu odstraní a karty se automaticky ,,posunou``
+- Takto nemusíme řešit jakékoli doplňovaní a otáčení karet, jelikož po koupi se karta ze seznamu odstraní a karty se automaticky "posunou"
 
 ---
 
