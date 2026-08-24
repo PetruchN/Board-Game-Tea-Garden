@@ -50,8 +50,7 @@ Obsahuje:
 
 ##### Poznámka ke konvicím
 
-Barva konvicí bude uložena ve  jednopísmeném stringu (R/G/B/U - červená, zelená, modrá, universální).
-Tedy seznam stringů bude např. B, B, U jako dvě modré a jedna jakákoli
+Barva konvicí bude uložena pod enumem `KettleColor`, která bude mít čtyři možnosti: Red, Blue, Green, Universal (tedy jakákoliv konvice)
 
 ---
 

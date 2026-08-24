@@ -6,6 +6,8 @@ Herní deska je objekt obsahující všechny objekty, které se na ní ve hře n
 
 ## 1. Balíček akčních karet
 
+### `class ActionCardDeck`
+
 Vytvořený na začátku hry míchacím algoritmem pro akční karty (algoritmus není součástí objektu `Board`) - ze seznamu všech akčních karet se vezmou karty podle pravidel a balíček se připraví
 
 ##### Účel objektu
@@ -29,10 +31,14 @@ Vytvořený na začátku hry míchacím algoritmem pro akční karty (algoritmus
 
 ## 2. Balíček císařských karet
 
+### `class ImperialCardDeck`
+
 - Funguje stejně jako balíček akčních karet, akorát se zobrazují karty pouze tři
 - Příprava balíčku spočívá pouze v zamíchaní všech císařských karet, které ve hře jsou
 
 ## 3. Balíček karavan
+
+### `class CaravanDeck`
 
 - Znovu funguje stejně jako akční karty, ale zobrazují se pouze karty tři
 - Také vytvořený na začátku hry svým algoritmem, který není součástí objektu `Board`
@@ -40,6 +46,8 @@ Vytvořený na začátku hry míchacím algoritmem pro akční karty (algoritmus
 ---
 
 ## 4. Hromádky destiček šálků
+
+### `class CupTilesPiles`
 
 ##### Účel objektu
 
@@ -63,6 +71,8 @@ Vytvořený na začátku hry míchacím algoritmem pro akční karty (algoritmus
 
 ## 5. Pole čajových zahrad
 
+### `class TeaGardenRegions`
+
 ##### Účel objektu
 
 Pamatovat si všechny informace o všech polích zahrad na desce:
@@ -85,6 +95,8 @@ Pamatovat si všechny informace o všech polích zahrad na desce:
 
 ## 6. Čajová univerzita
 
+### `class TeaUniversity`
+
 ##### Účel objektu
 
 - Ukazatel kolikrát každý hráč provedl vedlejší akci univerzity
@@ -106,6 +118,8 @@ Pamatovat si všechny informace o všech polích zahrad na desce:
 
 ## 7. Řeka
 
+### `class River`
+
 ##### Účel objektu
 
 - Ukazatel kolikrát hráči provedli vedlejší akci řeky
@@ -123,6 +137,8 @@ Pamatovat si všechny informace o všech polích zahrad na desce:
 ---
 
 ## 8. Stupnice císaře
+
+### `class ImperialRank`
 
 ##### Účel objektu
 
@@ -142,6 +158,8 @@ Pamatovat si všechny informace o všech polích zahrad na desce:
 
 ## 9. Počítadlo vítězných bodů
 
+### `WinningPointsCounter`
+
 ##### Účel objektu
 
 - Záznamník bodů, které každý hráč přes celou hrů dostává
@@ -151,6 +169,8 @@ Pamatovat si všechny informace o všech polích zahrad na desce:
 - N proměnných pro N hráčů
 
 ## 10. Počítadlo kol
+
+### `RoundCounter`
 
 ##### Účel objektu 
 

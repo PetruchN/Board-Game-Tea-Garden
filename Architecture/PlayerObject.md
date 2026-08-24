@@ -16,7 +16,7 @@ Například:
 
 ## 2. Balíčky karet
 
-Všechny balíčky budou postaveny nad rozhraním `Card`.
+Všechny balíčky budou postaveny nad rozhraním `ICard`.
 
 ### 2.1 Dobírací balíček
 
@@ -69,6 +69,8 @@ Na pořadí karet nezáleží.
 
 ### 2.3 Karty v ruce
 
+#### `class Hand`
+
 ##### Struktura
 
 - množina (`Set`) karet
@@ -98,6 +100,8 @@ Po odstranění jsou z konkrétní hry navždy odstraněny.
 
 ## 3. Přihrádky pro použité karty
 
+### `class UsedCards`
+
 ##### Struktura
 
 - Seznamy karet použitých v daném tahu v seznamu všech tahů (`Listy v listu`)
@@ -110,6 +114,8 @@ Po odstranění jsou z konkrétní hry navždy odstraněny.
 ---
 
 ## 4. Čajové lístky
+
+### `class OwnedTeaLeaves`
 
 ##### Účel objektu
 
@@ -128,6 +134,8 @@ Jednotlivé lístečky nebudou jinak definované, protože na jejich celkovém p
 ---
 
 ## 5. Čajové zahrady
+
+### `class AvailableTeaGardens`
 
 ##### Účel objektu
 
@@ -148,6 +156,8 @@ Samotná čajová zahrada nebude samostatný objekt, pouze `bool` hodnota buď n
 
 ## 6. Dokončené karavany
 
+### `class CompletedCaravans`
+
 ##### Účel objektu
 
 - Obsahuje všechny karavany, které hráč již ve hře provedl. Slouží pouze pro počítání bodů na konci (v rámci jedné císařské karty je možnost získat body na konci hry za počet dokončených karavan) a kdyby hráč potřeboval ze strategických důvodů vědět, co za karavany dokončil.
@@ -163,6 +173,8 @@ Samotná čajová zahrada nebude samostatný objekt, pouze `bool` hodnota buď n
 ---
 
 ## 7. Svitky a žetony
+
+### `class OwnedTokens`
 
 ##### Účel objektu
 
@@ -180,6 +192,8 @@ Samotná čajová zahrada nebude samostatný objekt, pouze `bool` hodnota buď n
 ---
 
 ## 8. Vlastněné šálky
+
+### `class OwnedCupTiles`
 
 Tento objekt je postavený nad objektem šálku, který sám obsahuje všechny bonusy a barvy jeho krajů.
 
