@@ -105,7 +105,7 @@ Po odstranění jsou z konkrétní hry navždy odstraněny.
 ##### Struktura
 
 - Seznamy karet použitých v daném tahu v seznamu všech tahů (`Listy v listu`)
-- maximálně 4 listy, odpovídající 4 tahům
+- maximálně 4 listy, odpovídající 4 tahům + 4 proměnné obsahující součet síly
 
 ##### Další informace
 

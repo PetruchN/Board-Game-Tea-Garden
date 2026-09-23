@@ -54,7 +54,9 @@ Slouží k uložení bonusů regionů v databázi hry, jelikož je ve hře omeze
 
 ##### Struktura
 - Co přinášejí (bonus)
-- ID (BXX)
+- ID (BXX) 
+
+---
 
 ## 4. Bonusy
 
