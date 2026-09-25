@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tea_Garden.BasicObjects\Tea_Garden.BasicObjects.csproj" />
+    <ProjectReference Include="..\Tea_Garden.Board\Tea_Garden.Board.csproj" />
+    <ProjectReference Include="..\Tea_Garden.Player\Tea_Garden.Player.csproj" />
+  </ItemGroup>
+
+</Project>

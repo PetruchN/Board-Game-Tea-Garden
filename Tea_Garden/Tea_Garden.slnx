@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Tea_Garden.BasicObjects/Tea_Garden.BasicObjects.csproj" />
+  <Project Path="Tea_Garden.Board/Tea_Garden.Board.csproj" />
+  <Project Path="Tea_Garden.Console/Tea_Garden.Console.csproj" />
+  <Project Path="Tea_Garden.Controller/Tea_Garden.Controller.csproj" />
+  <Project Path="Tea_Garden.Player/Tea_Garden.Player.csproj" />
+</Solution>
