@@ -2,9 +2,9 @@
 {
     public class ImperialCard : ICard
     {
-        public int Strength { get; private set; }
-        public string Id { get; private set; }
-        public List<IBonus> Bonuses { get; private set; }
+        public int Strength { get; }
+        public string Id { get; }
+        public List<IBonus> Bonuses { get; }
         public string ImperialBonusId { get; }
         public ImperialCard(int strength, string id, List<IBonus> bonuses, string imperialBonusId)
         {
