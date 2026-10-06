@@ -12,6 +12,8 @@
         public CompletedCaravans CompletedCaravans { get; set; }
         public OwnedTokens OwnedTokens { get; set; }
         public OwnedCupTiles OwnedCupTiles { get; set; }
+        public SecondaryActionsCounter SecondaryActionsCounter { get; set; }
+        public WinningPointsCounter WinningPointsCounter { get; set; }
 
         public Player (string name)
         {
@@ -25,6 +27,8 @@
             CompletedCaravans = new CompletedCaravans();
             OwnedTokens = new OwnedTokens();
             OwnedCupTiles = new OwnedCupTiles();
+            SecondaryActionsCounter = new SecondaryActionsCounter();
+            WinningPointsCounter = new WinningPointsCounter();
         }
     }
 }
