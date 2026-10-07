@@ -1,8 +1,8 @@
 ## Herní deska
 
-### `class Board`
+### `namespace Board`
 
-Herní deska je objekt obsahující všechny objekty, které se na ní ve hře nacházejí.
+Herní deska obsahuje obsahující všechny objekty, které se na ní ve hře nacházejí.
 
 ## 1. Balíček akčních karet
 
@@ -76,10 +76,11 @@ Vytvořený na začátku hry míchacím algoritmem pro akční karty (algoritmus
 ##### Účel objektu
 
 Pamatovat si všechny informace o všech polích zahrad na desce:
+- Id Regionu (1-16)
 - Zda mají na poli hráči postaveny čajové zahrady
 - Vlastněný bonus regionu přidělený na začátku hry
-- Jeho barvu
-- Jeho sousední pole
+- Jeho barvu (`enum TeaGardenRegionColor`)
+- Jeho sousední pole (`Array` Id)
 - Úroveň čajových lístků, které na ní rostou
 - Kolik míst pro čajové zahrady má a zda neudělují body po postavení
 
@@ -99,17 +100,14 @@ Pamatovat si všechny informace o všech polích zahrad na desce:
 
 ##### Účel objektu
 
-- Ukazatel kolikrát každý hráč provedl vedlejší akci univerzity
 - Jaké bonusy každá část (úroveň) má
 
 ##### Struktura
 
-- N proměnných pro N hráčů (jedna pro každého hráče)
 - Čtyři objekty pro každou úroveň, ve které bude zakodováno jaké bonusy může přinést (hráč má na výběr mezi dvěmi)
 
 ##### Odpovědnost
 
-- Pamatovat si kolik vedlejších akcí tohoto typu hráč udělal pro počítání bodů na konci hry
 - Databáze bonusů pro průběžné přidělování daných bonusů
 
 ##### Poznámka
@@ -122,12 +120,10 @@ Pamatovat si všechny informace o všech polích zahrad na desce:
 
 ##### Účel objektu
 
-- Ukazatel kolikrát hráči provedli vedlejší akci řeky
 - Jaké bonusy každý úsek řeky vlastní
 
 ##### Struktura
 
-- Znovu N proměnných pro N hráčů
 - Seznam všech bonusů, které řeka obsahuje (jedna položka seznamu jeden úsek řeky a jeho bonusy)
 
 ##### Odpovědnost
@@ -142,12 +138,10 @@ Pamatovat si všechny informace o všech polích zahrad na desce:
 
 ##### Účel objektu
 
-- Ukazatel jak daleku na stupnici císaře hráč je
 - Jakou cenu a jaké bonusy každý stupeň má
 
 ##### Struktura
 
-- Znovu N proměnných pro N hráčů
 - Seznam všech bonusů, co každá úroveň má + kdy má hráč možnost vzít si kartu císaře
 
 ##### Odpovědnost
@@ -156,19 +150,8 @@ Pamatovat si všechny informace o všech polích zahrad na desce:
 
 ---
 
-## 9. Počítadlo vítězných bodů
 
-### `WinningPointsCounter`
-
-##### Účel objektu
-
-- Záznamník bodů, které každý hráč přes celou hrů dostává
-
-##### Struktura
-
-- N proměnných pro N hráčů
-
-## 10. Počítadlo kol
+## 9. Počítadlo kol
 
 ### `RoundCounter`
 

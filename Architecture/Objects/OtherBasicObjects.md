@@ -11,6 +11,7 @@ Je to základní objekt představující kartu karavany, který se využívá p�
 Každá karavana má dvě části - tu na kterou je potřeba síla a tu na kterou čajové lístky a každá tato část má na výběr ze dvou možností (zda dá více nebo méně lístku nebo síly)
 To tedy vytváří čtyři kombinace, kterými muže hráč karavanu provést.
 Pod samotnou kartou karavany bude další objekt `class CaravanOption`, který bude obsahovat:
+- Úroveň 1-4
 - počet potřebných normálních lístků
 - počet fermentovaných lístků (je pouze u pokročilých modrých karavan, u základních žlutých je vždy null)
 - minimální sílu
@@ -20,9 +21,9 @@ Do každé karty karavan se tedy uloží seznam (Array) těchto čtyř objektů
 
 ##### Shrnutí struktury
 
-- Array 4 objektů `class CaravanOption` se čtyřmi možnostmi použití karavany
+- List 4 objektů `class CaravanOption` se čtyřmi možnostmi použití karavany
 - ID (značená pro karavany začíná písmenem K a poté dvojčíslí pořadí - KXX)
-- Barva (žlutá/modrá - základní/pokročilá karavana) - slouží pro jednodušší připravování hry
+- Barva (základní/pokročilá karavana - `enum` Basic/Advanced) - slouží pro jednodušší připravování hry
 
 ---
 
@@ -65,3 +66,4 @@ Všechny bonusy, co se vyskytují na kartách, karavanách, regionech atd.
 ##### Struktura
 
 Budou uloženy jako malé jednoduché funkce (např. přidej hráči jedna 3 lístky kvality 1)
+Všechny pod rozhraním `IBonus`
