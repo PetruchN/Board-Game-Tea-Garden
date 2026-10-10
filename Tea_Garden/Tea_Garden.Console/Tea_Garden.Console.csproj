@@ -8,10 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Tea_Garden.BasicObjects\Tea_Garden.BasicObjects.csproj" />
-    <ProjectReference Include="..\Tea_Garden.Board\Tea_Garden.Board.csproj" />
-    <ProjectReference Include="..\Tea_Garden.Controller\Tea_Garden.Controller.csproj" />
-    <ProjectReference Include="..\Tea_Garden.Player\Tea_Garden.Player.csproj" />
+    <ProjectReference Include="..\Tea_Garden.Player\Tea_Garden.GameEngine.csproj" />
   </ItemGroup>
 
 </Project>

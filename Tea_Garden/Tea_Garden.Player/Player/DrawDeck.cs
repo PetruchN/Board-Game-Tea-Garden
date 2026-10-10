@@ -1,6 +1,6 @@
-﻿namespace Tea_Garden.Player
+﻿namespace Tea_Garden.GameEngine
 {
-    public class TrashDeck
+    public class DrawDeck
     {
         public List<ICard> Cards { get; set; } = new List<ICard>();
     }

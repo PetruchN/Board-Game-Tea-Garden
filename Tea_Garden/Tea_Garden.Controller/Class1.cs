@@ -1,4 +1,4 @@
-﻿namespace Tea_Garden.Controller
+﻿namespace TeaGarden.GameEngine
 {
     public class Class1
     {

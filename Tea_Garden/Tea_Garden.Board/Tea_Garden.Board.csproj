@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Tea_Garden.BasicObjects\Tea_Garden.BasicObjects.csproj" />
+    <ProjectReference Include="..\Tea_Garden.Player\Tea_Garden.GameEngine.csproj" />
   </ItemGroup>
 
 </Project>

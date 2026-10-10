@@ -1,4 +1,4 @@
-﻿namespace Tea_Garden.Player
+﻿namespace Tea_Garden.GameEngine
 {
     public class WinningPointsCounter
     {
