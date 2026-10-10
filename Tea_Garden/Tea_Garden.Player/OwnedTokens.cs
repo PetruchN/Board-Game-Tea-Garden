@@ -6,5 +6,6 @@
         public int PlusOneScrolls { get; set; }
         public int KettleScrolls { get; set; }
         public int ImperorTokens { get; set; }
+        public int CupTokens { get; set; }
     }
 }

@@ -2,6 +2,7 @@
 {
     public class AvailableTeaGardens
     {
-        public bool[] AvailableGardens { get; set; } = new bool[6];
+        const int NumberOfGardens = 6;
+        public bool[] AvailableGardens { get; set; } = new bool[NumberOfGardens];
     }
 }

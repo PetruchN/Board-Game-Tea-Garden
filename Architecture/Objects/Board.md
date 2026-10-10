@@ -1,8 +1,8 @@
 ## Herní deska
 
-### `namespace Board`
+### `class Board`
 
-Herní deska obsahuje obsahující všechny objekty, které se na ní ve hře nacházejí.
+Herní deska je objekt obsahující všechny objekty, které se na ní ve hře nacházejí.
 
 ## 1. Balíček akčních karet
 

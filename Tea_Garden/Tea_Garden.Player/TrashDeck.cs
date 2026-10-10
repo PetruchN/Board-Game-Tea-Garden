@@ -2,6 +2,6 @@
 {
     public class TrashDeck
     {
-        public HashSet<ICard> Cards { get; set; } = new HashSet<ICard>();
+        public List<ICard> Cards { get; set; } = new List<ICard>();
     }
 }

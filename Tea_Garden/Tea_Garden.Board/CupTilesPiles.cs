@@ -2,10 +2,16 @@
 {
     public class CupTilesPiles
     {
-        public List<CupTile> Starter { get; set; } = new List<CupTile>();
-        public List<CupTile> Green { get; set; } = new List<CupTile>();
-        public List<CupTile> Blue { get; set; } = new List<CupTile>();
-        public List<CupTile> Red { get; set; } = new List<CupTile>();
-        public List<CupTile> Orange { get; set; } = new List<CupTile>();
+        const int PileCount = 5;
+        public List<CupTile>[] Piles { get; set; }
+
+        public CupTilesPiles()
+        {
+            Piles = new List<CupTile>[PileCount];
+            for (int i = 0; i < PileCount; i++)
+            {
+                Piles[i] = new List<CupTile>();
+            }
+        }
     }
 }

@@ -2,22 +2,12 @@
 {
     public class TeaUniversity
     {
-        public Level FirstLevel { get; } = new Level(
-            new IBonus[] {}, 
-            new IBonus[] {}
-            );
-        public Level SecondLevel { get; } = new Level(
-            new IBonus[] {}, 
-            new IBonus[] {}
-            );
-        public Level ThirdLevel { get; } = new Level(
-            new IBonus[] {}, 
-            new IBonus[] {}
-            );
-        public Level FourthLevel { get; } = new Level(
-            new IBonus[] {}, 
-            new IBonus[] {}
-            );
+        public List<Level> Levels { get; }
+
+        public TeaUniversity(List<Level> levels)
+        {
+            Levels = levels ?? new List<Level>();
+        }
     }
     public class Level
     {

@@ -2,10 +2,11 @@
 {
     public class OwnedTeaLeaves
     {
-        public TeaBox[] Boxes { get; set; } = new TeaBox[6];
+        const int NumberOfBoxes = 6;
+        public TeaBox[] Boxes { get; set; } = new TeaBox[NumberOfBoxes];
     }
 
-    public struct TeaBox
+    public class TeaBox
     {
         public int Fresh { get; set; }
         public int Fermented { get; set; }
