@@ -4,9 +4,9 @@
     {
         public List<ImperialCard> Cards { get; set; }
 
-        public ImperialCardDeck()
+        public ImperialCardDeck(List<ImperialCard> cards)
         {
-            Cards = new List<ImperialCard>();
+            Cards = cards ?? new List<ImperialCard>();
         }
     }
 }

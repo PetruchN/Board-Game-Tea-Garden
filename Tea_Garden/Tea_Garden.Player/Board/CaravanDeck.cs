@@ -4,9 +4,9 @@
     {
         public List<Caravan> Cards { get; set; }
 
-        public CaravanDeck()
+        public CaravanDeck(List<Caravan> cards)
         {
-            Cards = new List<Caravan>();
+            Cards = cards ?? new List<Caravan>();
         }
     }
 }

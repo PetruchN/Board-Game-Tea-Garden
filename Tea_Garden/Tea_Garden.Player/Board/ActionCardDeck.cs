@@ -6,7 +6,7 @@
         
         public ActionCardDeck(List<ActionCard> cards)
         {
-            Cards = cards;
+            Cards = cards ?? new List<ActionCard>();
         }
     }
 }

@@ -2,17 +2,18 @@
 {
     public class TeaUniversity
     {
-        public List<Level> Levels { get; }
+        const int NumberOfLevels = 4;
+        public Level[] Levels { get; }
 
-        public TeaUniversity(List<Level> levels)
+        public TeaUniversity(Level[] levels)
         {
-            Levels = levels ?? new List<Level>();
+            Levels = levels ?? new Level[NumberOfLevels];
         }
     }
     public class Level
     {
-        public IBonus[] FirstChoice;
-        public IBonus[] SecondChoice;
+        public IBonus[] FirstChoice { get; }
+        public IBonus[] SecondChoice { get; }
 
         public Level(IBonus[] firstChoice, IBonus[] secondChoice)
         {

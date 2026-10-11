@@ -2,11 +2,12 @@
 {
     public class River
     {
+        const int NumberOfLevels = 9;
         public IBonus[][] Levels { get; }
 
         public River(IBonus[][] levels)
         {
-            Levels = levels;
+            Levels = levels ?? new IBonus[NumberOfLevels][];
         }
     }
 }
