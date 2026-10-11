@@ -1,4 +1,4 @@
 <Solution>
   <Project Path="Tea_Garden.Console/Tea_Garden.Console.csproj" />
-  <Project Path="Tea_Garden.Player/Tea_Garden.GameEngine.csproj" />
+  <Project Path="Tea_Garden.GameEngine/Tea_Garden.GameEngine.csproj" Id="7774f177-a853-4db7-8c4c-517977582888" />
 </Solution>
