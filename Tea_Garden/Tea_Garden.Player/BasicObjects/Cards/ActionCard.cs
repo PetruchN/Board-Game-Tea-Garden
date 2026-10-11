@@ -1,4 +1,4 @@
-﻿namespace TeaGarden.GameEngine
+﻿namespace Tea_Garden.GameEngine
 {
     public class ActionCard : ICard
     {

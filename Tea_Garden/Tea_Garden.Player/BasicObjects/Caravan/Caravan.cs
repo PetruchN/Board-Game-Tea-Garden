@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace TeaGarden.GameEngine
+﻿namespace Tea_Garden.GameEngine
 {
     public class Caravan
     {

@@ -1,6 +1,6 @@
-﻿namespace TeaGarden.GameEngine
+﻿namespace Tea_Garden.GameEngine
 {
-    public class River
+    public class River 
     {
         const int NumberOfLevels = 9;
         public IBonus[][] Levels { get; }
