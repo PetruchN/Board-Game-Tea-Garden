@@ -21,4 +21,12 @@
             Kettles = kettles;
         }
     }
+
+    public enum KettleColor
+    {
+        Red,
+        Green,
+        Blue,
+        Universal
+    }
 }

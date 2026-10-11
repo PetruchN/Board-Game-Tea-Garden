@@ -1,8 +1,5 @@
-﻿using System.Collections.Generic;
-
-namespace TeaGarden.GameEngine
+﻿namespace TeaGarden.GameEngine
 {
-
     public interface IBonus
     {
     }

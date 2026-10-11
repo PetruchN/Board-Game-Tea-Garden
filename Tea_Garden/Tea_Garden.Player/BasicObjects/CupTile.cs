@@ -15,4 +15,11 @@
             RightColor = rightColor;
         }
     }
+
+    public enum CupTileColor
+    {
+        Blue,
+        Green,
+        White,
+    }
 }

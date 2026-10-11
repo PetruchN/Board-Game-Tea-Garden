@@ -15,4 +15,10 @@ namespace TeaGarden.GameEngine
             Type = type;
         }
     }
+
+    public enum CaravanType
+    {
+        Basic,
+        Advanced
+    }
 }
