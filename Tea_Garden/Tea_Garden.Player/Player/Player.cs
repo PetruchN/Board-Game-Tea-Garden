@@ -2,7 +2,7 @@
 {
     public class Player
     {
-        public string Name { get; set; }
+        public PlayerColor Color { get; }
         public DrawDeck DrawDeck { get; set; }
         public TrashDeck TrashDeck { get; set; }
         public Hand Hand { get; set; }
@@ -15,9 +15,9 @@
         public SecondaryActionsCounter SecondaryActionsCounter { get; set; }
         public WinningPointsCounter WinningPointsCounter { get; set; }
 
-        public Player (string name)
+        public Player (PlayerColor color)
         {
-            Name = name;
+            Color = color;
             DrawDeck = new DrawDeck();
             TrashDeck = new TrashDeck();
             Hand = new Hand();
@@ -30,5 +30,13 @@
             SecondaryActionsCounter = new SecondaryActionsCounter();
             WinningPointsCounter = new WinningPointsCounter();
         }
+    }
+
+    public enum PlayerColor
+    {
+        Red,
+        Blue,
+        Green,
+        Yellow
     }
 }

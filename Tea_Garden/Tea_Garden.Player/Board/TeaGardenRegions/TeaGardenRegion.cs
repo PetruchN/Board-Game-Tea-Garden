@@ -10,7 +10,7 @@
         public RegionBonus RegionBonus { get; private set; } = null!;
         public int[] NeighborRegionIds { get; }
         public int?[]? PointsOnBuild { get; }
-        public string?[]? PlacedTeaGardens { get; set; }
+        public PlayerColor?[] PlacedTeaGardens { get; set; }
 
         public TeaGardenRegion(int id, int teaLeafQuality, int teaGardensMaxCapacity, TeaGardenRegionColor regionColor, int[] neighborRegionIds, int?[]? pointsOnBuild)
         {
@@ -20,7 +20,16 @@
             RegionColor = regionColor;
             NeighborRegionIds = neighborRegionIds;
             PointsOnBuild = pointsOnBuild;
-            PlacedTeaGardens = new string?[teaGardensMaxCapacity];
+            PlacedTeaGardens = new PlayerColor?[teaGardensMaxCapacity];
         }
+    }
+
+    public enum TeaGardenRegionColor
+    {
+        Starter,
+        Red,
+        Blue,
+        Green,
+        Orange
     }
 }
